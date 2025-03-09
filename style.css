@@ -40,11 +40,26 @@ nav > .container > .collapse > .button > .btn > img {
 
 #Heroes > .container > .title-box {
     padding-top: 89px;
+    opacity: 0; /* Supaya animasi terlihat */
+    animation: fadeIn 1s ease-in-out forwards
 }
 
 #Heroes > .container > .title-box > .image-container > .image-profile {
     max-height: 498px;
     height: auto;
+    opacity: 0; /* Supaya animasi terlihat */
+    animation: fadeIn 1s ease-in-out forwards
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #Heroes > .container > .title-box > .title > .hello {
@@ -88,6 +103,8 @@ nav > .container > .collapse > .button > .btn > img {
 
 #About {
     font-family: "Poppins";
+    opacity: 0; /* Supaya animasi terlihat */
+    animation: fadeIn 1s ease-in-out forwards
 }
 
 #About > .container > h2 {
